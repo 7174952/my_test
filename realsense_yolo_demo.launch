@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- ROSノードの起動 -->
+    <node name="realsense_yolo_node" pkg="amr_ros" type="realsense_yolo_demo.py">
+        <!-- パラメータの設定 -->
+        <param name="use_sim_time" value="false"/>
+    </node>
+
+    <!-- 必要なトピックのリマップ（必要に応じて追加） -->
+    <!-- <remap from="/old_topic_name" to="/new_topic_name"/> -->
+</launch>
